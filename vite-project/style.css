@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#webgl {
+#app {
   position: absolute;
   top: 0;
   left: 0;
