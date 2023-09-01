@@ -27,9 +27,9 @@ h1 {
   z-index: 2;
   color: #fff;
   position: absolute;
-  top: 8%;
+  top: 6%;
   left: 10%;
-  transform: translate(-10%, -8%);
+  transform: translate(-10%, -6%);
   font-size: 5rem;
 }
 
@@ -56,5 +56,36 @@ h1 .gradient {
   }
   to {
     background-position: -200% center;
+  }
+}
+
+/**********************************/
+/* BELOW 944px (Portrait Tablets) */
+/*********************************/
+@media (max-width: 59rem) {
+  h1 {
+    font-size: 4rem;
+    left: 15%;
+  }
+}
+
+/**********************************/
+/* BELOW 704px (Smaller Tablets) */
+/*********************************/
+@media (max-width: 44rem) {
+  h1 {
+    font-size: 3rem;
+    left: 15%;
+  }
+}
+
+/**********************************/
+/* BELOW 544px (Phones) */
+/*********************************/
+@media (max-width: 34em) {
+  h1 {
+    font-size: 2.5rem;
+    top: 10%;
+    left: 20%;
   }
 }
