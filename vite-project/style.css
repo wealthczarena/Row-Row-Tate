@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+#webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h1 {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  transform: translate(-10%, -8%);
+  font-size: 5rem;
+}
+
+h1 .gradient {
+  background: linear-gradient(
+    to right,
+    var(--white),
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple),
+    var(--white)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 3s linear infinite;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
